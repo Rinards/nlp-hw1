@@ -1,6 +1,7 @@
 # FST for fragment of Latvian language
 
 **Author**: Rinards Koršaks, RK20099
+**Repository**: [Homework 1 Repository](https://github.com/Rinards/nlp-hw1)
 
 ---
 

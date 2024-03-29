@@ -1,0 +1,235 @@
+Multichar_Symbols
+    +N      ! noun
+    +V      ! verb
+    +Adj    ! adjective
+    +Sg     ! singular
+    +Pl     ! plural
+    +Nom    ! nominative
+    +Gen    ! genitive
+    +Dat    ! dative
+    +Acc    ! accusative
+    +Loc    ! locative
+    +Com    ! comperative
+    +Sup    ! superlative
+    +Pr     ! present
+    +Pa     ! past
+    +Fu     ! future
+    +3P     ! third person
+
+LEXICON Root
+    Nouns ;
+    Adjectives ;
+    Verbs ;
+
+!
+! NOUNS start here
+!
+
+LEXICON Nouns
+    zēns: zēn N1dekl_s ;
+    brālis: brāl N2dekl_is ;
+    suns: sun N2dekl_s ;
+    medus: med N3dekl ;
+    grāmata: grāmat N4dekl ;
+    saule: saul N5dekl ;
+    nakts: nakt N6dekl ;
+
+! 1.deklinācija
+
+LEXICON N1dekl_s
+    +N+Sg+Nom: s # ;
+    +N+Sg: 0 N1deklSg ;
+    +N+Pl: 0 N123deklPl ;
+
+LEXICON N1dekl_š
+    +N+Sg+Nom: š # ;
+    +N+Sg: 0 N1deklSg ;
+    +N+Pl: 0 N123deklPl ;
+
+LEXICON N1deklSg
+    +Gen: a # ;
+    +Dat: am # ;
+    +Acc: u # ;
+    +Loc: ā # ;
+
+! 2.deklinācija
+
+LEXICON N2dekl_is
+    +N+Sg+Nom: is # ;
+    +N+Sg+Gen: *a # ;
+    +N+Sg: 0 N2deklSg ;
+    +N+Pl: * N123deklPl ;
+
+LEXICON N2dekl_s
+    +N+Sg+Nom: s # ;
+    +N+Sg+Gen: s # ;
+    +N+Sg: 0 N2deklSg ;
+    +N+Pl: * N123deklPl ;
+
+LEXICON N2deklSg
+    +Dat: im # ;
+    +Acc: i # ;
+    +Loc: ī # ;
+
+! 3.deklinācija
+
+LEXICON N3dekl
+    +N+Sg+Nom: us # ;
+    +N+Sg+Gen: us # ;
+    +N+Sg+Dat: um # ;
+    +N+Sg+Acc: u # ;
+    +N+Sg+Loc: ū # ;
+    +N+Pl: N123deklPl ;
+
+! 1., 2., 3.deklinācija daudzsk.
+
+LEXICON N123deklPl
+    +Nom: i # ;
+    +Gen: u # ;
+    +Dat: iem # ;
+    +Acc: us # ;
+    +Loc: os # ;
+
+! 4.deklinācija
+
+LEXICON N4dekl
+    +N+Sg+Nom: a # ;
+    +N+Sg+Gen: as # ;
+    +N+Sg+Dat: ai # ;
+    +N+Sg+Acc: u # ;
+    +N+Sg+Loc: ā # ;
+    +N+Pl+Nom: as # ;
+    +N+Pl+Gen: u # ;
+    +N+Pl+Dat: ām # ;
+    +N+Pl+Acc: as # ;
+    +N+Pl+Loc: ām # ;
+
+! 5.deklinācija
+
+LEXICON N5dekl
+    +N+Sg+Nom: e # ;
+    +N+Sg+Gen: es # ;
+    +N+Sg+Dat: ei # ;
+    +N+Sg+Acc: i # ;
+    +N+Sg+Loc: ē # ;
+    +N+Pl+Nom: es # ;
+    +N+Pl+Gen: *u # ;
+    +N+Pl+Dat: em # ;
+    +N+Pl+Acc: es # ;
+    +N+Pl+Loc: ēs # ;
+
+! 6.deklinācija
+
+LEXICON N6dekl
+    +N+Sg+Nom: s # ;
+    +N+Sg+Gen: s # ;
+    +N+Sg+Dat: ij # ;
+    +N+Sg+Acc: i # ;
+    +N+Sg+Loc: ī # ;
+    +N+Pl+Nom: is # ;
+    +N+Pl+Gen: *u # ;
+    +N+Pl+Dat: īm # ;
+    +N+Pl+Acc: is # ;
+    +N+Pl+Loc: īs # ;
+
+!
+! ADJECTIVES start here
+!
+
+LEXICON Adjectives
+    jauns: jaun AMascIndef_s ;
+    zaļš: zaļ AMascIndef_š ;
+    skaista: skaist AFemIndef_a ;
+
+LEXICON AMascIndef_s
+    +Adj: 0 AMascIndef ;
+    +Adj+Sg+Nom: s # ;
+    +Adj+Comp: āk AMascIndef ;
+    +Adj+Comp+Sg+Nom: āks # ;
+    +Adj+Sup: āk AMascDef ;
+
+LEXICON AMascIndef_š
+    +Adj: 0 AMascIndef ;
+    +Adj+Sg+Nom: š # ;
+    +Adj+Comp: āk AMascIndef ;
+    +Adj+Comp+Sg+Nom: āks # ;
+    +Adj+Sup: āk AMascDef ;
+
+LEXICON AFemIndef_a
+    +Adj: 0 AFemIndef ;
+    +Adj+Comp: āk AFemIndef ;
+    +Adj+Sup: āk AFemDef ;
+
+LEXICON AMascIndef
+    +Sg+Gen: ā # ;
+    +Sg+Dat: ajam # ;
+    +Sg+Acc: o # ;
+    +Sg+Loc: ajā # ;
+    +Pl+Nom: i # ;
+    +Pl+Gen: o # ;
+    +Pl+Dat: ajiem # ;
+    +Pl+Acc: os # ;
+    +Pl+Loc: ajos # ;
+
+LEXICON AMascDef
+    +Sg+Nom: ais # ;
+    +Sg+Gen: ā # ;
+    +Sg+Dat: ajam # ;
+    +Sg+Acc: o # ;
+    +Sg+Loc: ajā # ;
+    +Pl+Nom: ie # ;
+    +Pl+Gen: o # ;
+    +Pl+Dat: ajiem # ;
+    +Pl+Acc: os # ;
+    +Pl+Loc: ajos # ;
+
+LEXICON AFemIndef
+    +Sg+Nom: a # ;
+    +Sg+Gen: as # ;
+    +Sg+Dat: ai # ;
+    +Sg+Acc: u # ;
+    +Sg+Loc: ā # ;
+    +Pl+Nom: as # ;
+    +Pl+Gen: u # ;
+    +Pl+Dat: ām # ;
+    +Pl+Acc: as # ;
+    +Pl+Loc: ās # ;
+
+LEXICON AFemDef
+    +Sg+Nom: ā # ;
+    +Sg+Gen: ās # ;
+    +Sg+Dat: ajai # ;
+    +Sg+Acc: o # ;
+    +Sg+Loc: ajā # ;
+    +Pl+Nom: ās # ;
+    +Pl+Gen: o # ;
+    +Pl+Dat: ajām # ;
+    +Pl+Acc: ās # ;
+    +Pl+Loc: ajām # ;
+
+!
+! VERBS start here
+!
+
+! First person singular and plural
+
+LEXICON Verbs
+    vērot: vēroJ Conj2 ;
+    rakstīt: rakstĪJ Conj3 ;
+    lasīt: lasĪJ Conj3 ;
+
+LEXICON Conj2
+    +V+Sg+Pa: ^^u # ;
+    +V+Sg+Pr: ^^u # ;
+    +V+Sg+Fu: šu # ;
+    +V+Pl+Pa: ^^ām # ;
+    +V+Pl+Pr: ^^am # ;
+    +V+Pl+Fu: sim # ;
+
+LEXICON Conj3
+    +V+Sg+Pa: ^^u # ;
+    +V+Sg+Pr: u # ;
+    +V+Sg+Fu: ^šu # ;
+    +V+Pl+Pa: ^^ām # ;
+    +V+Pl+Pr: ām # ;
+    +V+Pl+Fu: ^sim # ;

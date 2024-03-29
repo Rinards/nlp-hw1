@@ -1,0 +1,39 @@
+read lexc latvian.lexc
+
+define Lexicon;
+
+define ConsonantGradation [s -> š || _ "*"]
+    .o. [t -> š || _ "*"]
+    .o. [z -> ž || _ "*"]
+    .o. [d -> ž || _ "*"]
+    .o. [c -> č || _ "*"]
+    .o. [dz -> d ž || _ "*"]
+    .o. [l -> ļ || _ "*"]
+    .o. [n -> ņ || _ "*"]
+    .o. [p -> p j || _ "*"]
+    .o. [b -> b j || _ "*"]
+    .o. [m -> m j || _ "*"]
+    .o. [v -> v j || _ "*"];
+
+define CleanupAsterisk %* -> 0;
+
+define InsertII [..] -> ī || _ Ī J"^";
+
+define CleanUpII Ī -> 0;
+
+define InsertJ [..] -> "j" || _ J "^""^";
+
+define CleanUpJ J -> 0;
+
+define CleanUpCaret %⅝ -> 0;
+
+define Grammar Lexicon
+    .o. ConsonantGradation
+    .o. CleanupAsterisk
+    .o. InsertII
+    .o. InsertJ
+    .o. CleanUpII
+    .o. CleanUpJ
+    .o. CleanUpCaret;
+
+regex Grammar;
